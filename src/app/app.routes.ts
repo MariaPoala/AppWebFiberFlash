@@ -14,7 +14,12 @@ export const routes: Routes = [
                 path:'',
                 redirectTo: 'dashboard',
                 pathMatch: 'full'
-            }
+            },
+          
         ]
     },
+    {
+        path:'login',
+        loadComponent: () => import('./principal/authentication/login/login.component')
+    }
 ];
